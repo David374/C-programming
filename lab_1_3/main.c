@@ -89,7 +89,7 @@ void From16(char* str, int base, int length)
 				n = str[i] - '0';
 			else if(str[i] <= 'F')
 				n = str[i] - 'A' + 10;
-        else if(str[i] <= 'f')
+        		else if(str[i] <= 'f')
 				n = str[i] - 'a' + 10;
 			result += n * b;
 			b *= 16;
