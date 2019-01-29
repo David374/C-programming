@@ -7,11 +7,12 @@ void From8(char* str, int base, int length);
 void From16(char* str, int base, int length);
 
 
-int main() 
+int main()
 {
 	int base;
 	char str [11];
 	int length = 0;
+	printf(":");
 	scanf("%d %s", &base, str); // Ввод базиса и последовательности
 	if(base != 2 && base != 8 && base != 16)
 	{
@@ -26,16 +27,21 @@ int main()
 		else
 			break;
 	}
-	if(base == 2) 
+	if(base == 2)
 	{
 		From2(str, base, length);
 	}
-	if(base == 16) 
+	if(base == 8)
+	{
+		From8(str, base, length);
+	}
+	if(base == 16)
 	{
 		From16(str, base, length);
 	}
 	return (0);
 }
+
 
 void From2(char* str, int base, int length)
 {
@@ -54,6 +60,7 @@ void From2(char* str, int base, int length)
 		b *= 2;
 	}
 	printf("%d %s\n%d", base, str, result);
+	system("pause");
 }
 
 
@@ -75,6 +82,7 @@ void From8(char* str, int base, int length)
 	}
 	printf("%d %s\n%d", base, str, result);
 }
+
 
 void From16(char* str, int base, int length)
 {
