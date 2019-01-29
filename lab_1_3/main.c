@@ -60,7 +60,6 @@ void From2(char* str, int base, int length)
 		b *= 2;
 	}
 	printf("%d %s\n%d", base, str, result);
-	system("pause");
 }
 
 
