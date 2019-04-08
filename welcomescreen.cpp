@@ -6,9 +6,10 @@ using namespace std;
 
 int main()
 {
-	HANDLE hWnd = GetStdHandle(STD_OUTPUT_HANDLE);
+	// меняет размер буфера
+	/*HANDLE hWnd = GetStdHandle(STD_OUTPUT_HANDLE); 
 	COORD bufferSize = { 101, 100 };
-	SetConsoleScreenBufferSize(hWnd, bufferSize);
+	SetConsoleScreenBufferSize(hWnd, bufferSize);   */
 	
 	setlocale(LC_ALL, "Russian");
 	cout << "|--------------------------------------------------------------------------------------------|" << endl;
@@ -33,7 +34,7 @@ using namespace std;
 
 int main()
 {
-	SetWindowPos(GetConsoleWindow(), NULL, 100, 100, 600, 300, NULL);
+	SetWindowPos(GetConsoleWindow(), NULL, 100, 100, 600, 300, NULL); // меняет размер консоли и устанавливает координаты
 	setlocale(LC_ALL, "Russian");
 	cout << " |--------------------------------------------------------------------------------------------|" << endl;
 	cout << " |                                                                                            |" << endl;
