@@ -71,3 +71,24 @@ int main()
 	GetWindowRect(console, &r); //stores the console current dimensions
 
 	MoveWindow(console, r.left, r.top, 800, 450, TRUE); // 800 width, 100 height
+
+
+
+
+
+--------------------------------------------------------------------------------
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		COORD coordSize = { 100, 50 }; // задают размер буфера
+		int ret = SetConsoleScreenBufferSize(hConsole, coordSize);
+		SMALL_RECT rect = { 0, 0, 95, 45 }; // последние два значения задают размер экрана
+		int ret2 = SetConsoleWindowInfo(hConsole, TRUE, &rect);
+		SetConsoleTextAttribute(hStdOut, 72); // меняет цвет текста
