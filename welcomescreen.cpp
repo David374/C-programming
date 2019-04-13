@@ -92,3 +92,34 @@ int main()
 		SMALL_RECT rect = { 0, 0, 95, 45 }; // последние два значения задают размер экрана
 		int ret2 = SetConsoleWindowInfo(hConsole, TRUE, &rect);
 		SetConsoleTextAttribute(hStdOut, 72); // меняет цвет текста
+
+
+
+
+
+-----------------------------------------------------------
+	
+	
+	
+	
+	
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+		COORD coordSize = { 100, 50 }; // задают размер буфера
+		int ret = SetConsoleScreenBufferSize(hConsole, coordSize);
+		SMALL_RECT rect = { 0, 0, 95, 45 }; // последние два значения задают размер экрана
+		int ret2 = SetConsoleWindowInfo(hConsole, TRUE, &rect);
+		
+	
+		
+
+	
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
+	cout << " |                                                                                            |" << endl;
+	cout << " |                                                                                            |" << endl;
+			HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	cout << " |             Добро пожаловать в наш отель! Желаете забронировать номер?                     |" << endl;
+			SetConsoleTextAttribute(hStdOut, 05);
+	cout << " |                             Нажмите Y, если да или N если нет                              |" << endl;
+			SetConsoleTextAttribute(hStdOut, 7);
+	cout << " |                                                                                            |" << endl;
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
