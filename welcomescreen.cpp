@@ -123,3 +123,25 @@ int main()
 			SetConsoleTextAttribute(hStdOut, 7);
 	cout << " |                                                                                            |" << endl;
 	cout << " |--------------------------------------------------------------------------------------------|" << endl;
+
+
+
+
+
+-----------------------------------------
+	final version // cut
+	
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
+	cout << " |                                                                                            |" << endl;
+	cout << " |                                                                                            |" << endl;
+			HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	cout << " |             Добро пожаловать в наш отель! Желаете забронировать номер?                     |" << endl;
+	cout << " |                                                                                            |" << endl;
+			cout << " |";
+			SetConsoleTextAttribute(hStdOut, 02);
+			cout << "                          Нажмите Y, если да или N если нет.";
+			SetConsoleTextAttribute(hStdOut, 07);
+			cout << "                                |" << endl;
+			
+	cout << " |                                                                                            |" << endl;
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
