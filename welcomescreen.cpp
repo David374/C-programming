@@ -47,3 +47,27 @@ int main()
 	return 0;
 
 }
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	HWND console = GetConsoleWindow();
+	RECT r;
+	GetWindowRect(console, &r); //stores the console current dimensions
+
+	MoveWindow(console, r.left, r.top, 800, 450, TRUE); // 800 width, 100 height
