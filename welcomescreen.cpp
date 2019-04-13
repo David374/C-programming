@@ -145,3 +145,30 @@ int main()
 			
 	cout << " |                                                                                            |" << endl;
 	cout << " |--------------------------------------------------------------------------------------------|" << endl;
+
+
+
+-----------------------------------------------------------------------
+	
+	FINAL VERSION V2.0 // CUT
+	
+	
+	string str_welcome = "Добро пожаловать в наш отель! Желаете забронировать номер?";
+		string str2_welcome = "Нажмите Y, если да или N если нет.";
+		
+
+	
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
+	cout << " |                                                                                            |" << endl;
+	cout << " |                                                                                            |" << endl;
+			HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+	cout << " |             " << str_welcome  << "                     |" << endl;
+	cout << " |                                                                                            |" << endl;
+			cout << " |";
+			SetConsoleTextAttribute(hStdOut, 02);
+			cout << "                         " << str2_welcome;
+			SetConsoleTextAttribute(hStdOut, 07);
+			cout << "                                 |" << endl;
+			
+	cout << " |                                                                                            |" << endl;
+	cout << " |--------------------------------------------------------------------------------------------|" << endl;
