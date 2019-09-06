@@ -1,0 +1,9 @@
+{
+    "windows":
+    {
+        "cmd": ["gcc","-std=c99" ,"$file_name","-o", "${file_base_name}.exe", "-lm", "-Wall", "&","start", "${file_base_name}.exe"]
+    },
+    "selector" : "source.c",
+    "shell": true,
+    "working_dir" : "$file_path",
+ }
