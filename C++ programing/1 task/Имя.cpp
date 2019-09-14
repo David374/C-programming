@@ -74,5 +74,23 @@ int main()
 	return 0;
 }
 *********************************************
-6. version
- 
+6. version // в этой версии используется посимвольный вывод всех букв имени с помощью цикла
+ #include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+	//setlocale(LC_ALL, "RUS");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	char name[6] = { 'V', 'a', 'd', 'e', 'r' };
+	
+	for (int i = 0; i < 5; i++)
+	{
+		cout << name[i];
+	}
+
+	return 0;
+}
+*********************************************
