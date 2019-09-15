@@ -81,10 +81,9 @@ using namespace std;
 
 int main()
 {
-	//setlocale(LC_ALL, "RUS");
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	char name[6] = { 'V', 'a', 'd', 'e', 'r' };
+	char name[6] = { 'V', 'a', 'd', 'e', 'r' }; // Здесь по буквам пишем своё имя
 	
 	for (int i = 0; i < 5; i++)
 	{
