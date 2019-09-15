@@ -1,5 +1,5 @@
 *********************************************
-1. vserion
+1. version
 #include <string> // подключаем библиотеку string для работы со строками
 #include <iostream> // подключаем библиотеку для управления вводом и выводом
 
@@ -31,7 +31,7 @@ int main()
 	return 0;
 }
 *********************************************
-3. vsersion
+3. version
 #include <iostream>
 
 using namespace std;
