@@ -56,7 +56,7 @@ public class Main {
             }
         }
     }
-    public static void MenuOutPut(){
+    public static void menuOutPut(){
         System.out.println("0) Выходи из программы");
         System.out.println("1) Ввести массив вручную");
         System.out.println("2) Заполнить массив рандомно");
